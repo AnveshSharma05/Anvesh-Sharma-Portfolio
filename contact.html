@@ -141,23 +141,26 @@
 					</ul>
 				</div>
 				-->
-				<div class="col-md-7 col-md-push-1 animate-box">
+				<form action="https://api.web3forms.com/submit" method="POST">
+					<input type="hidden" name="access_key" value="b885bd60-9b98-4734-84cc-a0646807a0e5">
+					<div class="col-md-7 col-md-push-1 animate-box">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Name">
+								<input type="text" name = "name" class="form-control" placeholder="Name">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Email">
+								<input type="text" name = "email" class="form-control" placeholder="Email">
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="form-group">
-								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+								<textarea name="message" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
 							</div>
 						</div>
+						<input type="hidden" name="redirect" value="https://web3forms.com/success">
 						<div class="col-md-12">
 							<div class="form-group">
 								<input type="submit" value="Send Message" class="btn btn-primary btn-modify">
@@ -165,6 +168,9 @@
 						</div>
 					</div>
 				</div>
+					
+				</form>
+				
 			</div>
 		</div>
 	</div><!-- END container-wrap -->
@@ -232,6 +238,7 @@
 		</footer>
 	</div><!-- END container-wrap -->
 	</div>
+	
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
